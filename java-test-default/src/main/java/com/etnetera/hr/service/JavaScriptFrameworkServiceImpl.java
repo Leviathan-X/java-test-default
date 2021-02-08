@@ -17,7 +17,7 @@ public class JavaScriptFrameworkServiceImpl implements JavaScriptFrameworkServic
     }
 
     @Override
-    public void createFramework(String name, double version, String depreciationDate, int hypeLevel) {
+    public void addFramework(String name, double version, String depreciationDate, int hypeLevel) {
         this.javaScriptFrameworkRepository.save(new JavaScriptFramework(name, version, depreciationDate, hypeLevel));
     }
 
